@@ -3,4 +3,4 @@ from django.shortcuts import render
 from django.http import HttpResponse
 
 def home(request):
-    return HttpResponse("✅ Django is working — lootify → Lootify") 
+    return render(request, "Lootify/home.html") 
