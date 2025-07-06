@@ -188,6 +188,23 @@ i {
   margin-top: 20px;
   margin-bottom: 0px;  /* Add spacing below heading */
 }
+.right-radio{
+    display: flex;
+  justify-content: space-between;
+  align-items: center; /* Align text vertically */
+  padding: 10px 40px;
+  margin-top: 20px;
+  margin-bottom: 0px;  /* Add spacing below heading */
+
+}
+.right-albums {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Align text vertically */
+  padding: 10px 40px;
+  margin-top: 20px;
+  margin-bottom: 0px;  /* Add spacing below heading */
+}
 .right-foot {
   display: flex;
   justify-content: space-between;
@@ -341,3 +358,29 @@ i {
   object-fit: cover;
   border-radius: 8px;
 }
+.albums-section .song-card {
+  width: 220px;
+  padding: 5px 5px 5px;
+}
+
+.albums-section .song-card img {
+  height: 220px;
+}
+
+.albums-section .image-wrapper {
+  height: 220px;
+}
+
+.albums-section .play {
+  width: 48px;
+  height: 48px;
+  bottom: 12px;
+  right: 12px;
+}
+.albums-section {
+  display: flex;
+  gap: 25px; /* reduced gap from 16px or more */
+  padding: 10px 20px 20px;
+  overflow-x: auto;
+}
+
