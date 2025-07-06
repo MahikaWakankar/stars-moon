@@ -95,6 +95,15 @@ i {
   font-weight: 600;
   cursor: pointer;
 }
+.signup-btn{
+  padding: 7px 14px;
+  border-radius: 20px;
+  border: none;
+  background-color: white;
+  color: black;
+  font-weight: 600;
+  cursor: pointer;
+}
 
 /* Main Container */
 .container {
@@ -241,6 +250,7 @@ i {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  padding-top:7px;
 }
 
 .song-card p {
@@ -303,8 +313,8 @@ i {
 .play{
   width: 40px; 
   height: 40px; 
-  background-color: green; 
-  border-radius: 50%; 
+  background-color: #800080; 
+  border-radius: 50%;
   display: flex; 
   align-items: center; 
   justify-content: center;
