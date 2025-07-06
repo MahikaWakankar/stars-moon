@@ -175,8 +175,17 @@ i {
   display: flex;
   justify-content: space-between;
   align-items: center; /* Align text vertically */
-  padding: 20px 40px;
-  margin-bottom: 10px;  /* Add spacing below heading */
+  padding: 10px 40px;
+  margin-top: 20px;
+  margin-bottom: 0px;  /* Add spacing below heading */
+}
+.right-foot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Align text vertically */
+  padding: 10px 40px;
+  margin-top: 45px;
+  margin-bottom: 0px;  /* Add spacing below heading */
 }
 
 #trending{
@@ -191,7 +200,13 @@ i {
 .trending-section {
   display: flex;
   gap: 16px;
-  padding: 20px 0;
+  padding: 10px 40px 20px; /* reduced top padding */
+  overflow-x: auto;
+}
+.artists-section {
+  display: flex;
+  gap: 16px;
+  padding: 10px 40px 20px; /* reduced top padding */
   overflow-x: auto;
 }
 
@@ -229,6 +244,53 @@ i {
 }
 
 .song-card p {
+  font-size: 14px;
+  font-weight: 400;
+  color: #b3b3b3;
+  margin: 0;
+  line-height: 1.4;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.artist-card {
+  width: 200px;
+  flex-shrink: 0;
+  background-color: transparent;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  padding-left: 20px;
+}
+
+.artist-card:hover {
+  transform: scale(1.03);
+}
+
+.artist-card img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 12px;
+  display: block;
+}
+
+
+.artist-card h3 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffffff;
+  margin: 0 0 6px;
+  line-height: 1.4;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.artist-card p {
   font-size: 14px;
   font-weight: 400;
   color: #b3b3b3;
