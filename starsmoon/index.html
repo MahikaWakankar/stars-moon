@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Spotify Clone</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Top Navigation Bar -->
+  <header class="navbar">
+    <div class="nav-left">
+      <i class="fa-solid fa-headphones logo-icon"></i>
+    </div>
+
+    <div class="nav-center">
+      <i class="fa-solid fa-house"></i>
+      <i class="fa-solid fa-magnifying-glass"></i>
+      <input class="search-input" placeholder="What do you want to play?" />
+      <i class="fa-solid fa-cloud"></i>
+    </div>
+
+    <div class="nav-right">
+      <p>Premium</p>
+      <p>Support</p>
+      <p>Download</p>
+      <span class="divider">|</span>
+      <div class="install-app">
+        <i class="fa-solid fa-circle-arrow-down"></i>
+        <p>Install App</p>
+      </div>
+      <p>Sign Up</p>
+      <button class="login-btn">Login</button>
+    </div>
+  </header>
+
+  <!-- Main Container -->
+  <div class="container">
+    <!-- Left Panel -->
+    <div class="left">
+      <div class="yr-library">
+        <div class="library-header">
+          <span>Your Library</span>
+          <i class="fa-solid fa-plus"></i>
+        </div>
+        <div class="card card1">
+          <p class="card-title">Create your first playlist</p>
+          <p class="card-subtitle">It's easy, we'll help you</p>
+          <button>Create playlist</button>
+        </div>
+        <div class="card card2">
+          <p class="card-title">Let's find some podcasts to follow</p>
+          <p class="card-subtitle">We'll keep you updated on new episodes</p>
+          <button>Browse podcasts</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Panel -->
+    <div class="right">
+      <div class="right-head">
+        <p id="trending">Trending Songs</p>
+        <p id="show"><a>Show All</a></p>
+      </div>
+      <div class="trending-section">
+  <div class="song-card"><a>
+    <img src="sahiba.jpg" alt="Sahiba">
+    <h3>Sahiba</h3>
+    <p>Aditya Rikhari</p></a>
+  </div>
+
+  <div class="song-card"><a>
+    <img src="atpeace.jpg" alt="At Peace">
+    <h3>At Peace</h3>
+    <p>Karan Aujla, Ikky</p></a>
+  </div>
+
+  <div class="song-card"><a>
+    <img src="dhun.jpg" alt="Dhun">
+    <h3>Dhun (From "Saiyaara")</h3>
+    <p>Mithoon, Arijit Singh</p></a>
+  </div>
+
+  <div class="song-card"><a>
+    <img src="shoesoff.jpg" alt="Shoes Off">
+    <h3>Shoes Off</h3>
+    <p>Prem Dhillon, Iqbal, The Kidd</p></a>
+  </div>
+  <div class="song-card"><a>
+    <img src="highonyou.jpg" alt="Shoes Off">
+    <h3>High On You</h3>
+    <p>Jind Universe</p></a>
+  </div>
+  <div class="song-card"><a>
+    <img src="redflag.jpg" alt="Shoes Off">
+    <h3>Red Flag</h3>
+    <p>Kesha</p></a>
+  </div>
+</div>
+
+    </div>
+  </div>
+</body>
+</html>

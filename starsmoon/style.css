@@ -1,0 +1,240 @@
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+body {
+  background-color: #121212;
+  color: white;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #121212;
+  height: 80px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+  color: #a7a7a7;
+  font-size: 14px;
+}
+
+.logo-icon {
+  font-size: 24px;
+}
+
+.nav-center {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.search-input {
+  padding: 12px 20px;
+  background-color: #242424;
+  border: none;
+  border-radius: 30px;
+  color: white;
+  width: 300px;
+  font-size: 16px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.search-input::placeholder {
+  color: #b3b3b3;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-right p {
+  cursor: pointer;
+  color: #a7a7a7;
+}
+
+.nav-right p:hover,
+.nav-center i:hover,
+.install-app:hover p,
+.install-app:hover i,
+.library-header i:hover {
+  color: #ffffff;
+}
+
+.divider {
+  color: #a7a7a7;
+}
+
+.install-app {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}
+
+i {
+  font-size: 18px;
+  color: #a7a7a7;
+  cursor: pointer;
+}
+
+.login-btn {
+  padding: 8px 16px;
+  border-radius: 20px;
+  border: none;
+  background-color: white;
+  color: black;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* Main Container */
+.container {
+  display: flex;
+}
+
+/* Sidebar */
+.left {
+  width: 350px;
+  height: calc(100vh - 80px); /* Full height minus navbar */
+  background-color: #121212;
+  padding: 20px;
+}
+
+.yr-library {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100%;
+  width: 100%;
+}
+
+.library-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  font-size: 16px;
+  width: 100%;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.card {
+  background-color: #242424;
+  width: 280px;
+  height: 480px;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 12px ;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-title {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.card-subtitle {
+  font-size: 13px;
+  color: #b3b3b3;
+  margin-bottom: 12px;
+}
+
+.card button {
+  background-color: white;
+  color: black;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 13px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Right panel placeholder */
+.right {
+  flex: 1;
+  background-color: #181818;
+  color:white;
+}
+
+.right-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Align text vertically */
+  padding: 20px 40px;
+  margin-bottom: 10px;  /* Add spacing below heading */
+}
+
+#trending{
+  font-weight: 700;
+  font-size: 24px;
+}
+#show{
+  font-size: 16px;
+  padding:3px;
+}
+
+.trending-section {
+  display: flex;
+  gap: 16px;
+  padding: 20px 0;
+  overflow-x: auto;
+}
+
+.song-card {
+  width: 200px;
+  flex-shrink: 0;
+  background-color: transparent;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  padding: 20px;
+}
+
+.song-card:hover {
+  transform: scale(1.03);
+}
+
+.song-card img {
+  width: 100%;
+  height: 200px;
+  border-radius: 8px;
+  object-fit: cover;
+  margin-bottom: 12px;
+  display: block;
+}
+
+.song-card h3 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffffff;
+  margin: 0 0 6px;
+  line-height: 1.4;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.song-card p {
+  font-size: 14px;
+  font-weight: 400;
+  color: #b3b3b3;
+  margin: 0;
+  line-height: 1.4;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
